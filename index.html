@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eleanor Sigel</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, 'Linux Libertine', Georgia, 'Times New Roman', serif;
+      font-size: 14px;
+      line-height: 1.6;
+      background: #f8f9fa;
+      color: #202122;
+    }
+
+    #mw-head {
+      background: #fff;
+      border-bottom: 1px solid #a2a9b1;
+      padding: 6px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    #mw-head .site-name {
+      font-family: -apple-system, 'Linux Libertine', Georgia, serif;
+      font-size: 1.1em;
+      color: #54595d;
+    }
+    #mw-head nav a {
+      color: #3366cc;
+      text-decoration: none;
+      font-size: 0.85em;
+      margin-left: 8px;
+    }
+    #mw-head nav a:hover { text-decoration: underline; }
+
+    #content-wrapper {
+      max-width: 980px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 1.5em 2em 3em;
+      border-left: 1px solid #a2a9b1;
+      border-right: 1px solid #a2a9b1;
+      min-height: 100vh;
+    }
+
+    h1#firstHeading {
+      font-family: -apple-system, 'Linux Libertine', Georgia, serif;
+      font-size: 2em;
+      font-weight: normal;
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 3px;
+      margin-bottom: 0.5em;
+      color: #000;
+    }
+
+    h2 {
+      font-family: -apple-system, 'Linux Libertine', Georgia, serif;
+      font-size: 1.5em;
+      font-weight: normal;
+      border-bottom: 1px solid #a2a9b1;
+      padding-bottom: 2px;
+      margin: 1.4em 0 0.5em;
+      color: #000;
+    }
+    h3 {
+      font-size: 1.05em;
+      font-weight: bold;
+      margin: 1em 0 0.3em;
+      color: #000;
+    }
+
+    a { color: #3366cc; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:visited { color: #3366cc; }
+
+    p { margin: 0.4em 0 0.7em; }
+    ul { margin: 0.3em 0 0.7em 1.6em; }
+    li { margin-bottom: 0.25em; }
+
+    .infobox {
+      float: right;
+      clear: right;
+      margin: 0 0 1em 1.6em;
+      border: 1px solid #a2a9b1;
+      background: #f8f9fa;
+      font-size: 88%;
+      line-height: 1.5;
+      width: 260px;
+    }
+    .infobox-title {
+      background: #cee0f2;
+      text-align: center;
+      font-weight: bold;
+      padding: 4px 8px;
+      font-size: 1.05em;
+    }
+    .infobox img {
+      display: block;
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: center top;
+    }
+    .infobox-caption {
+      text-align: center;
+      font-size: 86%;
+      color: #54595d;
+      padding: 3px 8px 5px;
+      border-bottom: 1px solid #a2a9b1;
+    }
+    .infobox table { width: 100%; border-collapse: collapse; }
+    .infobox td {
+      padding: 3px 8px;
+      vertical-align: top;
+      border-top: 1px solid #eaecf0;
+    }
+    .infobox td:first-child {
+      font-weight: bold;
+      white-space: nowrap;
+      width: 40%;
+      color: #54595d;
+    }
+
+    #toc {
+      background: #f8f9fa;
+      border: 1px solid #a2a9b1;
+      padding: 0.6em 1em;
+      display: inline-block;
+      float: left;
+      clear: left;
+      margin: 0 1.6em 1em 0;
+      min-width: 180px;
+      font-size: 92%;
+    }
+    #toc-title { font-weight: bold; text-align: center; margin-bottom: 0.3em; }
+    #toc ol { margin: 0 0 0 1.2em; }
+    #toc li { margin: 0.15em 0; }
+    #toc a { color: #3366cc; }
+
+    .background-section {
+      border-left: 3px solid #eaecf0;
+      padding-left: 1em;
+      margin: 0.5em 0;
+      color: #404040;
+    }
+    .background-section h3 { color: #404040; }
+
+    .clearfix::after { content: ""; display: table; clear: both; }
+
+    #footer {
+      max-width: 980px;
+      margin: 0 auto;
+      border-top: 1px solid #a2a9b1;
+      padding: 0.8em 2em;
+      font-size: 85%;
+      color: #54595d;
+      background: #f8f9fa;
+      border-left: 1px solid #a2a9b1;
+      border-right: 1px solid #a2a9b1;
+    }
+
+    @media (max-width: 640px) {
+      .infobox { float: none; width: 100%; margin: 0 0 1em; }
+      #toc { float: none; width: 100%; margin: 0 0 1em; }
+      #content-wrapper { padding: 1em; }
+    }
+  </style>
+</head>
+<body>
+
+<div id="mw-head">
+  <span class="site-name">Eleanor Sigel</span>
+  <nav>
+    <a href="#research">Research</a>
+    <a href="#writing">Writing</a>
+    <a href="#running">Running</a>
+    <a href="#education">Education</a>
+    <a href="eleanor_sigel_resume.pdf" target="_blank">Résumé</a>
+  </nav>
+</div>
+
+<div id="content-wrapper">
+
+  <h1 id="firstHeading">Eleanor Sigel</h1>
+
+  <!-- Infobox -->
+  <div class="infobox">
+    <div class="infobox-title">Eleanor Sigel</div>
+    <img src="headshot.png" alt="Eleanor Sigel" />
+    <div class="infobox-caption">Eleanor Sigel</div>
+    <table>
+      <tr>
+        <td>Position</td>
+        <td>Pre-Doctoral Research Fellow</td>
+      </tr>
+      <tr>
+        <td>Employer</td>
+        <td><a href="https://en.wikipedia.org/wiki/Stanford_Graduate_School_of_Business" target="_blank">Stanford Graduate School of Business</a></td>
+      </tr>
+      <tr>
+        <td>Advisor</td>
+        <td>Prof. Juan Carlos Suárez Serrato</td>
+      </tr>
+      <tr>
+        <td>Fields</td>
+        <td><a href="https://en.wikipedia.org/wiki/Public_finance" target="_blank">Public finance</a>, <a href="https://en.wikipedia.org/wiki/Applied_economics" target="_blank">applied microeconomics</a>, <a href="https://en.wikipedia.org/wiki/Economic_history" target="_blank">economic history</a></td>
+      </tr>
+      <tr>
+        <td>Contact</td>
+        <td><a href="mailto:esigel@stanford.edu">esigel@stanford.edu</a></td>
+      </tr>
+      <tr>
+        <td>Writing</td>
+        <td><a href="https://medium.com/@esigel_68300" target="_blank">Medium</a></td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- TOC -->
+  <div id="toc">
+    <div id="toc-title">Contents</div>
+    <ol>
+      <li><a href="#bio">Biography</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#writing">Writing</a></li>
+      <li><a href="#running">Running</a></li>
+      <li><a href="#education">Education</a></li>
+    </ol>
+  </div>
+
+  <!-- Lead -->
+  <p id="bio">
+    <b>Eleanor Sigel</b> is a pre-doctoral research fellow at the
+    <a href="https://en.wikipedia.org/wiki/Stanford_Graduate_School_of_Business" target="_blank">Stanford Graduate School of Business</a>,
+    working with Professor Juan Carlos Suárez Serrato at the
+    <a href="https://stax.stanford.edu" target="_blank">Stanford Initiative for Business, Taxation, and Society (STAX)</a>
+    on questions in public finance and tax policy.
+    She received B.A. degrees in <a href="https://en.wikipedia.org/wiki/Economics" target="_blank">Economics</a> and <a href="https://en.wikipedia.org/wiki/Mathematics" target="_blank">Mathematics</a> from the <a href="https://en.wikipedia.org/wiki/University_of_Southern_California" target="_blank">University of Southern California</a> in 2025.
+    Outside of research, she is a competitive endurance runner and writes about food and economics.
+  </p>
+
+  <div class="clearfix"></div>
+
+  <!-- ══ RESEARCH ══ -->
+  <h2 id="research">Research</h2>
+
+  <h3>Stanford Graduate School of Business (July 2025–present)</h3>
+  <p>
+    As a pre-doctoral fellow at <a href="https://en.wikipedia.org/wiki/Stanford_Graduate_School_of_Business" target="_blank">Stanford GSB</a>,
+    Sigel collaborates with Professor Juan Carlos Suárez Serrato at the
+    <a href="https://stax.stanford.edu" target="_blank">STAX Lab</a>
+    on empirical projects in <a href="https://en.wikipedia.org/wiki/Public_finance" target="_blank">public finance</a>,
+    including tax incentives, <a href="https://en.wikipedia.org/wiki/Research_and_development" target="_blank">R&amp;D</a> investment, and corporate behavioral responses to tax policy.
+  </p>
+
+  <h3>Federal Reserve Bank of Chicago (June–August 2024)</h3>
+  <p>
+    As a research intern in the Microeconomics Department of the
+    <a href="https://en.wikipedia.org/wiki/Federal_Reserve_Bank_of_Chicago" target="_blank">Federal Reserve Bank of Chicago</a>,
+    Sigel contributed to two projects:
+    a <a href="https://en.wikipedia.org/wiki/Regression_discontinuity_design" target="_blank">Regression Discontinuity</a> study of Colombian import data examining the
+    <a href="https://en.wikipedia.org/wiki/United_States%E2%80%93Colombia_Trade_Promotion_Agreement" target="_blank">US–Colombia Trade Promotion Agreement</a>
+    (with Dr. Diego Jiménez Hernández), and early-stage applied micro research using
+    <a href="https://en.wikipedia.org/wiki/United_States_courts_of_appeals" target="_blank">US Court of Appeals</a>
+    judicial data (with Dr. Camilo Garcia-Jimeno).
+  </p>
+
+  <h3>USC Department of Economics (February 2022–October 2024)</h3>
+  <p>
+    Research assistant to Professor Augustin Bergeron on projects in <a href="https://en.wikipedia.org/wiki/Applied_economics" target="_blank">applied microeconomics</a>,
+    <a href="https://en.wikipedia.org/wiki/Development_economics" target="_blank">development economics</a>,
+    and <a href="https://en.wikipedia.org/wiki/Economic_history" target="_blank">economic history</a>,
+    using <a href="https://en.wikipedia.org/wiki/Stata" target="_blank">Stata</a>,
+    <a href="https://en.wikipedia.org/wiki/QGIS" target="_blank">QGIS</a>, and R to analyze spatial, survey, and historical data.
+    Contributed research assistance to
+    "<a href="https://www.dropbox.com/scl/fi/ktnujj9wdvgf0rr7fhh03/Missions_Social_Ties.pdf?rlkey=m4kt1njfwv673gn51gv30lj6u&dl=0" target="_blank">From Kin to Creed: Missions and the Reconfiguration of Social and Moral Order in Colonial Congo</a>"
+    (Bergeron, 2025), a study of how <a href="https://en.wikipedia.org/wiki/Christian_missions_in_Africa" target="_blank">Christian missions</a> in colonial <a href="https://en.wikipedia.org/wiki/Democratic_Republic_of_the_Congo" target="_blank">Congo</a> reshaped kinship ties, moral values, and group identity.
+  </p>
+
+  <h3>REU — "Research Projects in Data-Enabled Industrial Mathematics" (May–July 2023)</h3>
+  <p>
+    At <a href="https://en.wikipedia.org/wiki/Embry-Riddle_Aeronautical_University" target="_blank">Embry-Riddle Aeronautical University</a>
+    in partnership with the <a href="https://en.wikipedia.org/wiki/Nevada_National_Security_Site" target="_blank">Nevada National Security Site</a>,
+    Sigel worked on "Uncertainty Propagation in Image Deblurring" — reframing <a href="https://en.wikipedia.org/wiki/Deblurring" target="_blank">image deblurring</a> as
+    a <a href="https://en.wikipedia.org/wiki/Inverse_problem" target="_blank">linear inverse problem</a> and applying machine learning and mathematical methods in Python.
+    Results were presented at the <a href="https://en.wikipedia.org/wiki/MathFest" target="_blank">2023 MAA MathFest</a> and the <a href="https://en.wikipedia.org/wiki/Joint_Mathematics_Meetings" target="_blank">2024 Joint Mathematics Meetings</a>.
+  </p>
+
+  <h3>Individual Research</h3>
+  <p>
+    "<a href="potato_essay.pdf" target="_blank">You Say Potato, I Say…: The Post-Columbian Divergence in European Economic and Ideological Development</a>"
+    examines how the introduction of the <a href="https://en.wikipedia.org/wiki/Potato" target="_blank">potato</a> shaped divergent economic and ideological trajectories
+    across Europe after the <a href="https://en.wikipedia.org/wiki/Columbian_exchange" target="_blank">Columbian Exchange</a>.
+  </p>
+
+  <!-- ══ WRITING ══ -->
+  <h2 id="writing">Writing</h2>
+
+  <p>
+    Sigel writes on economics, food, and culture. Her essays are published on
+    <a href="https://medium.com/@esigel_68300" target="_blank">Medium</a>.
+    She was featured on <a href="https://en.wikipedia.org/wiki/The_Sporkful" target="_blank"><em>The Sporkful</em></a>,
+    the three-time <a href="https://en.wikipedia.org/wiki/James_Beard_Foundation_Award" target="_blank">James Beard Award</a>-winning food podcast,
+    in an episode about running 31 miles while eating <a href="https://en.wikipedia.org/wiki/Taco_Bell" target="_blank">Taco Bell</a>.
+    [<a href="https://www.sporkful.com/why-would-someone-run-31-miles-while-eating-taco-bell/" target="_blank">listen</a>]
+  </p>
+
+  <!-- ══ RUNNING ══ -->
+  <h2 id="running">Running</h2>
+
+  <p>
+    Sigel competes in <a href="https://en.wikipedia.org/wiki/Marathon" target="_blank">marathons</a> and <a href="https://en.wikipedia.org/wiki/Ultramarathon" target="_blank">ultramarathons</a>.
+    Her <a href="https://ultrasignup.com/m_results_participant.aspx?fname=Eleanor&lname=Sigel" target="_blank">UltraSignup profile</a>
+    contains some of her ultra results.
+  </p>
+
+  <h3>Selected Results</h3>
+  <ul>
+    <li><a href="https://en.wikipedia.org/wiki/Charlevoix_Marathon" target="_blank">Charlevoix Marathon</a> — <a href="https://en.wikipedia.org/wiki/Boston_Marathon#Qualifying_standards" target="_blank">BQ</a></li>
+    <li><a href="https://marathonview.net/race/132708?category=F19+-+29" target="_blank">Marathon result — MarathonView #132708</a></li>
+    <li><a href="https://www.alamedapint.com/Race/Results/128628#resultSetId-568401;perpage:100" target="_blank">Alameda Pint race result</a></li>
+    <li><a href="https://marathonview.net/race/134511" target="_blank">Marathon result — MarathonView #134511</a></li>
+  </ul>
+
+  <!-- ══ EDUCATION ══ -->
+  <h2 id="education">Education</h2>
+
+  <div class="background-section">
+    <p>
+      <b><a href="https://en.wikipedia.org/wiki/Stanford_Graduate_School_of_Business" target="_blank">Stanford Graduate School of Business</a></b> — Pre-Doctoral Research Fellow (2025–present).
+      Graduate coursework: Microeconomic Analysis I (P), Microeconomic Analysis II (HP), Topics in US &amp; International Economic History (A−).
+    </p>
+    <p>
+      <b><a href="https://en.wikipedia.org/wiki/University_of_Southern_California" target="_blank">University of Southern California</a>, Dornsife College</b> — B.A. Economics &amp; B.A. Mathematics (May 2025, GPA 3.74).
+      Presidential Scholar, University Scholar, SOAR Award.
+    </p>
+    <p>
+      <b><a href="https://en.wikipedia.org/wiki/Sciences_Po" target="_blank">Sciences Po</a>, Paris</b> — Certificate of Studies in the Humanities and Social Sciences (January–May 2024, GPA 3.73).
+      Coursework in <a href="https://en.wikipedia.org/wiki/Public_economics" target="_blank">public economics</a>, <a href="https://en.wikipedia.org/wiki/Urban_economics" target="_blank">urban economics</a>, and economics of migration.
+      Also attended Sciences Po Summer School (Summer 2022) for French language and French history.
+    </p>
+    <p>
+      <b><a href="https://en.wikipedia.org/wiki/Lake_Tahoe_Community_College" target="_blank">Lake Tahoe Community College</a></b> — Backcountry Skiing and Snowboarding: Beginning (A, 2026).
+    </p>
+  </div>
+
+</div>
+
+<div id="footer">
+  <p>Eleanor Sigel &bull; <a href="mailto:esigel@stanford.edu">esigel@stanford.edu</a> &bull; Stanford GSB</p>
+</div>
+
+</body>
+</html>
